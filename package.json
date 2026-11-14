@@ -1,0 +1,22 @@
+{
+  "name": "saludya-agenda-hexagonal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Repositorio base de la sesión 3 del Módulo 1 (ejemplo de clase: agenda de citas de SaludYa, hexagonal).",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "test": "vitest run",
+    "test:dominio": "vitest run test/dominio",
+    "test:aplicacion": "vitest run test/aplicacion",
+    "test:memoria": "vitest run test/infraestructura/contrato-memoria",
+    "test:arquitectura": "vitest run test/arquitectura",
+    "test:json": "vitest run test/infraestructura/contrato-json test/infraestructura/intercambio",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
